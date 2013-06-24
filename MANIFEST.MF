@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: ComTest
+Bundle-SymbolicName: ComTest;singleton:=true
+Bundle-Version: 1.0.6
+Export-Package: comtest
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
