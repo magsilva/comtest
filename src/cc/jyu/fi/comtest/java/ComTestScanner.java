@@ -340,8 +340,10 @@ public class ComTestScanner extends cc.jyu.fi.comtest.BaseComTestScanner { // NO
 
         if ( ini.fullAutoImport && !needsStaticImport && !needsClassImport ) needsClassImport = true;
 
-        if ( ini.fullAutoImport && needsStaticImport ) imports.add("import static " + originalPackageName + "." + className +".*;");
-        if ( ini.fullAutoImport && needsClassImport ) imports.add("import " + originalPackageName + ".*;");
+        if ( ini.fullAutoImport && needsStaticImport )
+        		imports.add("import static " + originalPackageName + "." + className +".*;");
+        if ( ini.fullAutoImport && needsClassImport )
+        	imports.add("import " + originalPackageName + ".*;");
 
         for (i=0; i<outlines.size()-1; i++) {
             String s = outlines.get(i).trim();
